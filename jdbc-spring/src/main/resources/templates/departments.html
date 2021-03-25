@@ -8,12 +8,12 @@
 <body>
     <h1>An overview of our departments</h1>
     <table>
-    <tr
-        th:each="department : ${departments}">
-        <td th:text="${department.getDeptno()}"></td>
-        <td th:text="${department.getDeptName()}"></td>
-        <td th:text="${department.getLocation()}"></td>
-    </tr>
+        <tr
+            th:each="department : ${departments}">
+            <td th:text="${department.getDeptno()}"></td>
+            <td th:text="${department.getDeptName()}"></td>
+            <td th:text="${department.getLocation()}"></td>
+        </tr>
     </table>
 </body>
 </html>
